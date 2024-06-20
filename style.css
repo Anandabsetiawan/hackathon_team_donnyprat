@@ -1,0 +1,139 @@
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img {
+    height: 32px;
+    padding-left: 30px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover{
+    color: #D55672!important;
+}
+
+.navbar {
+    background: #ccfe06;
+}
+
+.navbar-toggler {
+    border: none!important;
+}
+
+.nav-link{
+    color: black!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(asset/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+.content{
+    margin-top: 20%;
+    color: white;
+    max-width: 620px;
+    margin-left: 5%;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 20px;
+}
+
+.content .btn {
+    font-size: 50 px;
+    padding: 10px 30px;
+    background-color: #ccfe06;
+    margin-bottom: 30%;
+}
+
+#classes {
+    background-color: black;
+    background-image: none;
+}
+
+#classes h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: white;
+}
+
+.wrapper {
+    padding: 10px 10%;
+}
+
+#cards {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    color: white;
+
+}
+
+.box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, black 58%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+
+.boxLhover img{
+    transform: scale(1.2);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+
+#testimonials {
+    background-color: white;
+    background-image: none;
+}
